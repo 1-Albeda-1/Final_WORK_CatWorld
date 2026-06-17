@@ -1,0 +1,122 @@
+footer {
+  margin-top: 50px;
+  background-image: url(../img/ФонFooter.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+.footer-contents-up {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+.footer-logo {
+  background-image: url(../img/Logo.png);
+  background-size: cover;
+  padding-left: 200px;
+  min-width: 100px;
+  min-height: 65px;
+  transform: scale(0.9);
+  cursor: pointer;
+  margin-top: 20px;
+}
+.button-unvisible {
+  min-width: 200px;
+  border: 0;
+  background-color: #fed04a;
+}
+.footer-menu {
+  margin-top: 40px;
+}
+.footer-menu li{
+  margin-left: 15px;
+  font-size: 24px;
+  text-align: right;
+}
+.footer-menu li :hover{
+  color: #DB6906;
+}
+.footer-menu a {
+  color: #46444B;
+}
+.footer-contents-down {
+  margin-top: 20px;
+  display: flex;
+}
+.socials {
+  display: flex;
+  margin-left: 150px;
+}
+.social-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.social-img:hover {
+  transform: scale(1.03);
+}
+.footer-text {
+  margin-top: 10px;
+  min-width: 200px;
+}
+.create-line-horizontal-footer {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  display: block;
+  border-top: 1px solid #46444B;
+  z-index: 0;
+}
+.horizontal-line-hidden {
+  overflow: hidden;
+}
+@media screen and (max-width: 810px) {
+  .footer-menu {
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .socials {
+    margin-left: 100px;
+  }
+  .footer-text {
+    padding-left: 20px;
+  }
+  .footer-menu {
+    margin-right: 40px;
+  }
+  .footer-logo {
+    margin-left: 20px;
+    transform: scale(0.75);
+  }
+  .footer-contents-up {
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .footer-logo {
+    margin-left: 10px;
+    padding-left: 300px;
+    transform: scale(0.65);
+  }
+  .socials {
+    margin-left: -10px;
+  }
+  .footer-menu {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-menu li{
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .socials {
+    margin-left: -80px;
+  }
+}

@@ -1,0 +1,226 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  background-color: #FFF4D7;
+  color: #46444B;
+}
+
+header {
+  background-image: url(../img/main/Фон.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.create-line-virtical {
+  margin-top: 25px;
+  height: 150px;
+  border-left: 1px solid #46444B;
+}
+.title {
+  font-size: 55px;
+  text-align: center;
+}
+
+/* ТЕКСТ */
+.header-buy {
+  width: 220px;
+  height: 135px;
+  margin-top: -3px;
+}
+.header-text {
+  width: 363px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+.text-hight {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 10px;
+}
+.text-small {
+  font-size: 28px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.header-button {
+  margin-top: 10px;
+  background-color: #DB6906;
+  height: 40px;
+  width: 135px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 24px;
+}
+.header-button a {
+  color: white;
+}
+.header-button-select :hover {
+  transform: scale(1.02);
+}
+.header-content_inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* ПОРОДЫ */
+.breeds {
+  margin-top: 20px;
+}
+.breeds-cats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.breeds-cat {
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.breeds-cat-select :hover{
+  transform: scale(1.01);
+}
+.cat-img {
+  width: 220px;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.cat-text {
+  text-align: center;
+  margin: auto;
+  font-size: 28px;
+  max-width: 130px;
+}
+.view-all {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right;
+}
+.view-all-content {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+}
+.view-text {
+  font-size: 24px;
+}
+.view-all-select :hover {
+  transform: scale(1.01);
+}
+
+.arrow-img {
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 20px;
+  height: 15px;
+}
+
+/* СТАТИСТИКА */
+.statistic {
+  margin-top: 40px;
+  background-image: url(../img/main/ФонStatistic.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+.statistic-contents {
+  display: flex;
+  justify-content: space-around;
+}
+.statistic-content {
+  margin-top: 50px;
+  text-align: center;
+  
+}
+.statistic-text-hight {
+  font-size: 48px;
+}
+.statistic-text-small {
+  font-size: 20px;
+  color: #6D6B76;
+}
+
+
+/* ОТЗЫВЫ */
+.reviews {
+  margin-top: 20px;
+}
+.reviews-content {
+  margin: auto;
+  width: 400px;
+  height: 230px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.reviews-content-up {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px 0 20px;
+}
+.reviews-content-left {
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+}
+.name-client {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.reviews-date {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.reviews-decor {
+  margin-top:20px;
+  width: 40px;
+  height: 35px;
+}
+.reviews-content-down {
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews-text {
+  margin: auto ;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.reviews-stars {
+  margin: 15px 0 10px;
+  height: 20px;
+  width: 100px;
+}
+/* SWIPER */
+.wrapper {
+  flex-grow: 1;
+}
+.swiper {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+}
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #FECD45;
+}

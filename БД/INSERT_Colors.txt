@@ -1,0 +1,6 @@
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (1,'Черный')
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (2,'Шоколадный')
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (3,'Рыжий')
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (4,'Серебристый')
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (5,'Пятнистый')
+INSERT INTO `colors`(`id-color`, `color-title`) VALUES (6,'Колор-поинт')

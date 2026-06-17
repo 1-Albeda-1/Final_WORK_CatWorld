@@ -1,0 +1,44 @@
+footer {
+  margin-top: 50px;
+  background-image: url(../img/ФонFooter.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+}
+.footer-contents-up {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -25px;
+}
+.footer-logo {
+  transform: scale(0.5);
+}
+.footer-menu {
+  margin-top: 40px;
+}
+.footer-menu li{
+  margin-left: 15px;
+  font-size: 24px;
+  text-align: right;
+}
+.footer-menu li :hover{
+  color: #DB6906;
+}
+.footer-menu a {
+  color: #46444B;
+}
+.footer-contents-down {
+  margin-top: 20px;
+  display: flex;
+}
+.socials {
+  margin-left: 350px;
+}
+.social-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.footer-text {
+  margin-top: 10px;
+}

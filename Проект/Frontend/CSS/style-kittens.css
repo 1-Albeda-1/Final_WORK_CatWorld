@@ -1,0 +1,128 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  background-color: #FFF4D7;
+  color: #46444B;
+}
+
+header {
+  background-image: url(../img/kittens/Фон.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+  display: block;
+}
+
+/* ТЕКСТ */
+.header-text {
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 300px;
+}
+.text-hight {
+  font-size: 40px;
+}
+.text-small {
+  max-width: 500px;
+  word-wrap: break-word;
+  font-size: 25px;
+  color: #6D6B76;
+}
+
+
+
+/* КОТЯТА */
+.kittens {
+  margin-top: 50px;
+}
+.kittens-content {
+  display: flex;
+}
+.kittens-flex {
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-template-rows: repeat(2, 220px);
+}
+.kitten {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.kitten a {
+  color: #46444B;
+}
+.kitten-select :hover{
+  transform: scale(1.01);
+}
+.kittens-img {
+  width: 150px;
+  height: 140px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.kittens-text {
+  text-align: center;
+  margin: 10px auto auto auto;
+  font-size: 30px;
+  max-width: 130px;
+}
+/* ПАГИНАЦИЯ */
+.pagination {
+  display: flex;
+  margin-left: 150px;
+  margin-top: 5px;
+}
+.pagination-number {
+  width: 40px;
+  font-size: 30px;
+}
+.pagination-button {
+  background-color: #DB6906;
+  color: white;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 30px;
+  margin-top: -2px;
+}
+.vertical-line {
+  height: 450px;
+  border-left: 2px solid #6e6e6e;
+}
+/* ФИЛЬТРАЦИЯ */
+.kittens-filter {
+  margin-left: 20px;
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+}
+.filter-title {
+  font-size: 35px;
+  margin-top: 15px;
+}
+.filter-list {
+  background: linear-gradient(to right,#FEDB5E , #FECD47) ;
+  color: #46444B;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.filter-item {
+  color: #46444B;
+  font-weight: bold;
+  font-size: 30px;
+}

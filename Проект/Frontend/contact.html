@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style-menu.css">
+  <link rel="stylesheet" href="CSS/style-footer.css">
+  <link rel="stylesheet" href="CSS/style-contact.css">
+  <title>Наши котята</title>
+</head>
+<body>
+  <header>
+      <a href="main.html">
+        <img class="header-logo" src="img/Logo.png">
+      </a>   
+      <nav class="menu">
+        <li><a href="main.html">Меню</a></li>
+        <li><a href="kittens.html">Наши котята</a></li>
+        <li><a href="breeds.html">Породы кошек</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+      </nav>
+      <div class="create-line-horizontal"></div>
+  </header>
+
+  <div class="contact">
+    <div class="conteiner">
+      <div class="contact-content">
+        <img class="contact-img" src="img/contact/LeftBlock.png">
+        <div class="contact-data">
+          <div class="title">Служба поддержки</div>
+          <div class="form">
+            <form action="#" id="form" class="contact-form">  
+              <input id="formFio" class="form-input _req" type="text" name="fio">
+              <input id="formEmail" class="form-input _req _email" type="text" name="email">
+              <textarea id="formMessage" class="form-input" type="text" name="message"></textarea>
+              <div class="form-button-select">
+                <button class="form-button" type="submit">Отправить</button>
+              </div>
+            </form>         
+          </div>       
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="JS/script-contact.js"></script>
+
+  <footer>
+    <div class="conteiner">
+      <div class="footer-contents-up">  
+        <a href="main.html">
+          <img class="footer-logo" src="img/Logo.png">
+        </a> 
+        <nav class="footer-menu">
+          <li><a href="kittens.html">Наши котята</a></li>
+          <li><a href="breeds.html">Породы кошек</a></li>
+          <li><a href="contact.html">Контакты</a></li>
+        </nav>      
+      </div>    
+    </div>
+    <div class="create-line-horizontal"></div>
+    <div class="conteiner">
+      <div class="footer-contents-down">  
+        <div class="footer-text">© 2024 СAT WORLD Все права защищены.</div>
+        <div class="socials">
+          <img class="social-img" src="img/telegram.png">
+          <img class="social-img" src="img/vkontakte.png">
+          <img class="social-img" src="img/whatsapp.png">
+        </div>    
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

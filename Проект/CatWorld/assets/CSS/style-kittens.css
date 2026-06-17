@@ -1,0 +1,336 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  background-color: #FFF4D7;
+  color: #46444B;
+}
+.conteiner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../img/kittens/Фон.png);
+  background-size: cover;
+  background-position: center;
+  max-height: 438px;
+  display: block;
+}
+.header-img {
+  margin-right: 120px;
+  margin-bottom: 428px;
+  max-width: 200px;
+  transform: scale(0.23);
+}
+.header-img img {
+  margin-left: -300px;
+}
+.header-flex {
+  max-height: 430px;
+  display: flex;
+}
+/* ТЕКСТ */
+.header-text {
+  margin-top: 60px;
+  margin-left: -20px;
+  text-align: left;
+  max-height: 200px;
+  max-width: 500px;
+}
+.text-hight {
+  font-size: 38px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 0.8s ease 0s;
+}
+.text-hight._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.text-small {
+  word-wrap: break-word;
+  font-size: 25px;
+  color: #6D6B76;
+  opacity: 0;
+  transform: translate(0px, 100%);
+  transition: all 1s ease 0s;
+}
+.text-small._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+/* КОТЯТА */
+.kittens {
+  margin-top: -90px;
+  overflow: hidden;
+}
+.kittens-content {
+  display: flex;
+}
+.kittens-flex {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 170px);
+  grid-template-rows: repeat(2, 220px);
+}
+.kitten {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.kitten a {
+  color: #46444B;
+}
+.kitten-select:hover .kitten{
+  transform: scale(1.03);
+  z-index: 2;
+}
+.kittens-img {
+  width: 150px;
+  height: 140px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.kitten-select-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.kittens-text {
+  font-size: 30px;
+  font-weight: 600;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  color: #46444B;
+}
+.vertical-line {
+  margin-top: 80px;
+  height: 520px;
+  border-left: 2px solid #6e6e6e;
+}
+/* ФИЛЬТРАЦИЯ */
+.kittens-filter {
+  margin-top: 70px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.kittens-filter-popup {
+  margin-top: 80px;
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+}
+.filter-title {
+  font-size: 35px;
+  margin-top: 20px;
+}
+.filter-list {
+  background: linear-gradient(to right,#FEDB5E , #FECD47) ;
+  color: #46444B;
+  font-weight: bold;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  border: 0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.filter-item {
+  color: #46444B;
+  font-weight: bold;
+  font-size: 30px;
+}
+.filter-button {
+  background-color: #DB6906;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+/* МОДАЛЬНОЕ ОКНО */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 126, 126, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup-content {
+  background-color: #FFFAEE;
+  border-radius: 20px;
+  max-width: 500px;
+  padding: 35px;
+}
+.popup-close {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -10px;
+  text-decoration: none;
+}
+.popup-close-img {
+  max-width: 30px;
+}
+.popup-title {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto -90px 0px;
+}
+.filter-button-hidden {
+  background-color: #DB6906;
+  color: white;
+  height: 50px;
+  width: 180px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 30px;
+  display: block;
+  margin: auto;
+  visibility: hidden;
+}
+.filter-button-hidden a{
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 770px) {
+  .kittens {
+    margin-top: -20px;
+  }
+  .kittens-filter {
+    visibility: hidden;
+  }
+  .vertical-line {
+    visibility: hidden;
+  }
+  .kittens-content {
+    margin-bottom: -130px;
+  }
+  .kittens-flex {
+    margin: 20px 0 0 100px;
+  }
+  .filter-button-hidden {
+    visibility: visible;
+    margin: 70px 0 0 253px;
+    display: block;
+  }
+  .header-text {
+    margin-top: 50px;
+    margin-left: -10px;
+  }
+  .text-hight {
+    max-width: 370px;
+    font-size: 35px;
+  }
+  .text-small {
+    font-size: 25px;
+    max-width: 310px;
+  }
+  .pagination-content {
+    margin-left: 158px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-img {
+    margin-right: 120px;
+    margin-bottom: 365px;
+    transform: scale(0.21);
+  }
+  .header-text {
+    max-width: 270px;
+    margin-left: -25px;
+  }
+  .text-hight {
+    font-size: 30px;
+  }
+  .text-small {
+    font-size: 22px;
+    max-width: 310px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .header-text {
+    max-width: 270px;
+    margin-left: -70px;
+  }
+  .kittens-flex {
+    margin: 30px 0 0 170px;
+    display: block;
+    align-items: center;
+  }
+  .filter-button-hidden {
+    margin: 70px 0 0 203px;
+  }
+  .kittens-content {
+    margin-bottom: 50px;
+    min-height: 300px;
+  }
+  .kitten {
+    width: 250px;
+    height: 270px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .kittens-img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .kittens-text {
+    font-size: 35px;
+    max-width: 200px;
+  }
+  .pagination-content {
+    margin-left: 110px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .filter-button-hidden {
+    position: relative;
+    left: -50px;
+  }
+  .kittens-flex {
+    margin: 30px 0 0 120px;
+    display: block;
+    align-items: center;
+  }
+  .filter-button-hidden {
+    margin: 70px 0 0 203px;
+  }
+  .pagination-content {
+    margin-left: 60px;
+  }
+}

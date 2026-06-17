@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+  margin: auto;
+  display: block;
+  color: #46444B;
+}
+
+.conteiner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.create-line-horizontal {
+  width: 800px;
+  margin: auto;
+  display: block;
+  border-top: 1px solid #46444B;
+}
+.horizontal-line-hidden {
+  overflow: hidden;
+}
+
+/* МЕНЮ */
+.header-logo {
+  margin-bottom: -15px;
+
+}
+.header-logo img{
+  position: relative;
+  margin: auto;
+  display: block;
+  transform: scale(0.55);
+  cursor: pointer;
+  object-fit: contain;
+  z-index:99;
+}
+.menu {
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+  z-index:99;
+}
+.menu li{
+  margin-left: 15px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+ul, li {
+  display: inline-block;
+  list-style: none;
+  text-align: center;
+}
+.menu li :hover{
+  color: #DB6906;
+}

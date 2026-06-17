@@ -1,0 +1,334 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  background-color: #FFF4D7;
+  color: #46444B;
+}
+
+header {
+  background-image: url(../img/breeds/Фон.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 1080px;
+}
+.header-content {
+  overflow: hidden;
+}
+.header-img {
+  background-image: url(../img/breeds/Кот.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 850px;
+  margin-top: -200px;
+  background-position-x: right;
+  opacity: 0;
+  transform: translate(100%, 0px);
+  transition: all 1.5s ease 0s;
+}
+.header-text {
+  text-align: left;
+  font-size: 40px;
+  padding-top: 570px;
+  max-width: 300px;
+  margin-left: 10px;
+}
+.header-img._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+/* ПОРОДЫ */
+.breeds {
+  margin-top: -400px;
+}
+.breeds-content {
+  display: flex;
+}
+.breeds-cats {
+  position: relative;
+  display: grid;
+  margin-bottom: 60px;
+  grid-template-columns: repeat(3, 170px);
+  grid-template-rows: repeat(3, 220px);
+  z-index: 1;
+}
+.breeds-cat {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.breeds-cat-select:hover .breeds-cat{
+  transform: scale(1.03);
+  z-index: 2;
+}
+.cat-img {
+  width: 150px;
+  height: 140px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.breeds-select-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-text {
+  text-wrap: wrap;
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 130px;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  color: #46444B;
+}
+.vertical-line {
+  margin-top: 80px;
+  height: 550px;
+  border-left: 2px solid #6e6e6e;
+}
+/* ФИЛЬТРАЦИЯ */
+.breeds-filter {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 20px;
+  z-index: 1;
+}
+.breeds-filter-popup {
+  position: relative;
+  margin-top: 80px;
+  z-index: 1;
+}
+.filter-content {
+  display: flex;
+  flex-direction: column;
+}
+.filter-title {
+  margin-top: 20px;
+  font-size: 35px;
+}
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+}
+.filter-button {
+  background: linear-gradient(to right,#FEDB5E , #FECD47) ;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  font-size: 24px;
+}
+.filter-button a {
+ color: #46444B;
+}
+.filter-button-first {
+  border: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.filter-button-center {
+  border-color: #6e6e6e;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 0;
+}
+.filter-button-last {
+  border-color: #6e6e6e;
+  border-left: 0;
+  border-bottom: 0;
+  border-right: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.filter-button-select :hover {
+  transform: scale(1.02);
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(126, 126, 126, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 9999;
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+.popup-content {
+  background-color: #FFFAEE;
+  border-radius: 20px;
+  max-width: 500px;
+  padding: 35px;
+}
+.popup-close {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -10px;
+  text-decoration: none;
+}
+.popup-close-img {
+  max-width: 30px;
+}
+.popup-title {
+  font-size: 40px;
+  text-align: center;
+  margin: 20px auto -90px 0px;
+}
+.filter-button-header {
+  background-color: #DB6906;
+  color: white;
+  height: 50px;
+  width: 170px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 30px;
+  display: block;
+  margin: auto;
+  visibility: hidden;
+}
+.filter-button-header a{
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .header-img {
+    background-position-y: 10%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header-img {
+    background-position-y: 20%;
+    background-position-x: 40%;
+    transform: scale(1);
+    min-height: 800px;
+    margin-top: -205px;
+  }
+  .header-text {
+    text-align: left;
+    font-size: 40px;
+    padding-top: 560px;
+    max-width: 300px;
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .vertical-line {
+    visibility: hidden;
+  }
+  .breeds-filter {
+    visibility: hidden;
+  }
+  .breeds-cats {
+    margin-top: 90px;
+    margin-left: 90px;
+  }
+  .filter-button-header {
+    visibility: visible;
+    margin-top: -95px;
+    margin-left: 375px;
+  }
+  .header-img {
+    background-position-x: 50%;
+    min-width: 800px;
+    transform: scale(0.85);
+    margin-top: -197px;
+  }
+  .header-text {
+    font-size: 40px;
+    min-width: 350px;
+    padding-top: 640px;
+    padding-left: 50px;
+  }
+  .pagination-content {
+    margin-left: 150px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  header {
+    min-height: 700px;
+  }
+  .breeds-cats {
+    margin: -20px 0 0 125px;
+    display: block;
+    align-items: center;
+  }
+  .breeds-content {
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+  .breeds-cat {
+    width: 250px;
+    height: 290px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+  }
+  .cat-img {
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .cat-text {
+    font-size: 35px;
+    max-width: 200px;
+    margin-top: -5px;
+  }
+  .filter-button-header {
+    margin-top: -25px;
+    margin-left: 150px;
+    width: 210px;
+    font-size: 40px;
+  }
+  .header-img {
+    background: none;
+  }
+  .header-text {
+    text-align: center;
+    font-size: 50px;
+    max-width: 500px;
+    padding-top: 200px;
+    padding-left: 30px;
+    margin-left: -10px;
+  }
+  .pagination-content {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 450px){
+  .breeds-cats {
+    margin-left: 70px;
+  }
+  .filter-button-header {
+    margin-left: 90px;
+  }
+  .header-text {
+    margin-left: -70px;
+  }
+  .pagination-content {
+    margin-left: 65px;
+  }
+}

@@ -1,0 +1,556 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  background-color: #FFF4D7;
+  color: #46444B;
+}
+
+header {
+  background-image: url(../img/main/Фон.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 520px;
+  display: block;
+}
+.header-img-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+}
+.header-img {
+  max-width: 200px;
+  transform: scale(0.5);
+}
+.header-img img {
+  margin-bottom: -345px;
+  margin-left: -200px;
+}
+.create-line-virtical {
+  margin-top: 25px;
+  height: 180px;
+  border-left: 1px solid #46444B;
+}
+.title {
+  font-size: 55px;
+  text-align: center;
+}
+
+/* ТЕКСТ */
+.header-buy {
+  width: 220px;
+  height: 135px;
+  margin-top: -3px;
+}
+.header-text {
+  margin-left: 100px;
+  width: 363px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+.text-hight {
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 0.8s ease 0s;
+}
+.text-hight._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.text-small {
+  font-size: 28px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 1s ease 0s;
+}
+.text-small._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.header-button {
+  margin-top: 10px;
+  background-color: #DB6906;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 24px;
+  opacity: 0;
+  transform: translate(0px, 120%);
+  transition: all 1.5s ease 0s;
+}
+.header-button._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.header-button a {
+  color: white;
+}
+.header-button-select :hover {
+  transform: scale(1.02);
+}
+.header-content_inner {
+  display: flex;
+}
+
+
+/* ПОРОДЫ */
+.breeds {
+  margin-top: 20px;
+}
+.breeds-cats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.breeds-cat {
+  width: 220px;
+  height: 220px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.breeds-cat-select:hover .breeds-cat{
+  transform: scale(1.03);
+  z-index: 2;
+}
+.cat-img {
+  width: 220px;
+  height: 150px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.breeds-select-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cat-text {
+  text-wrap: wrap;
+  font-size: 28px;
+  font-weight: 550;
+  max-width: 145px;
+  max-height: 65px;
+  background-color: white;
+  border: 0;
+  cursor: pointer;
+  color: #46444B;
+}
+.view-all {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: right;
+}
+.view-all-content {
+  display: flex;
+  justify-content: right;
+  max-width: 100%;
+}
+.view-text {
+  font-size: 26px;
+}
+.view-all-select :hover {
+  transform: scale(1.01);
+}
+.arrow-img {
+  margin-left: 5px;
+  margin-top: 8px;
+  width: 20px;
+  height: 15px;
+}
+
+/* СТАТИСТИКА */
+.statistic {
+  position: relative;
+  margin-top: 40px;
+  background-image: url(../img/main/ФонStatistic.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 220px;
+}
+.statistic-contents { 
+  position: absolute;
+  z-index: 1;
+  max-width: 700px;
+  top: 0px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.statistic-content {
+  margin-top: 50px;
+  text-align: center; 
+}
+.statistic-text-hight {
+  font-size: 50px;
+  opacity: 0;
+  transform: translate(0px, 100%);
+  transition: all 0.8s ease 0s;
+}
+.statistic-text-hight._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.statistic-text-small {
+  font-size: 30px;
+  color: #6D6B76;
+  opacity: 0;
+  transform: translate(0px, 100%);
+  transition: all 2.5s ease 0s;
+}
+.statistic-text-small._active{
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.animated-content {
+  position: relative;
+  top: 60px;
+  min-height: 130px;
+  overflow: hidden;
+}
+.animated-cat {
+  position: absolute; 
+  z-index: 2;
+  transform: translateX(-200px);
+  transition: all 10s ease-in-out 0s;
+}
+.animated-cat img {
+  transform: scale(0.7);
+}
+.animated-cat._active{
+  transform: translateX(1000%);
+}
+
+
+
+/* ОТЗЫВЫ */
+.reviews {
+  margin-top: 20px;
+}
+.reviews-content {
+  margin: auto;
+  width: 500px;
+  height: 310px;
+  background-color: #FFFAEE;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(201, 201, 201, 2);
+}
+.reviews-content-up {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px 0 20px;
+}
+.reviews-content-left {
+  margin-top:20px;
+  display: flex;
+  flex-direction: column;
+}
+.name-client {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.reviews-date {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.reviews-decor {
+  margin-top:10px;
+  width: 50px;
+  height: 45px;
+}
+.reviews-content-down {
+  margin: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.reviews-text {
+  margin: auto ;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.reviews-stars {
+  margin-top: 20px;
+  height: 30px;
+  width: 150px;
+}
+
+/* SWIPER */
+.wrapper {
+  margin-top: 20px;
+  flex-grow: 1;
+}
+.swiper {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+}
+.swiper-wrapper {
+  box-sizing: content-box;
+}
+.swiper-pagination-progressbar {
+  background: rgb(255, 235, 179);
+  margin-top: 340px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #FECD45;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #FECD45;
+}
+
+@media screen and (max-width: 770px) {
+  .header-img-content {
+    margin-left: 50px;
+  }
+  .header-text {
+    margin-top: 50px;
+  }
+  .text-hight {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 10px;
+  }
+  .text-small {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header-img {
+    transform: scale(0.45);
+  }
+  .header-img img {
+    padding-top: 40px;
+  }
+  .header-buy {
+    width: 200px;
+    height: 125px;
+    margin-top: -3px;
+  }
+  .header-text {
+    width: 280px;
+  }
+  .text-hight {
+    font-size: 45px;
+    line-height: 45px;
+  }
+  /* ПОРОДЫ */
+  .title {
+    font-size: 50px;
+  }
+  .breeds-cat {
+    width: 200px;
+    height: 200px;
+  }
+  .cat-img {
+    width: 200px;
+    height: 130px;
+  }
+  .cat-text {
+    font-size: 24px;
+    max-width: 115px;
+  }
+  .view-all {
+    margin-right: 50px;
+  }
+  .view-text {
+    font-size: 22px;
+  }
+  .arrow-img {
+    margin-left: 5px;
+    margin-top: 8px;
+    width: 18px;
+    height: 12px;
+  }
+  /* СТАТИСТИКА */
+  .statistic-text-hight {
+    font-size: 45px;
+  }
+  .statistic-text-small {
+    font-size: 25px;
+  }
+  /* ОТЗЫВЫ */
+  .reviews-content {
+    width: 450px;
+    height: 280px;
+  }
+  .name-client {
+    font-size: 15px;
+  }
+  .reviews-date {
+    font-size: 12px;
+  }
+  .reviews-decor {
+    margin-top:10px;
+    width: 40px;
+    height: 35px;
+  }
+  .reviews-text {
+    font-size: 13px;
+  }
+  .reviews-stars {
+    height: 20px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header-img-content {
+    max-width: 150px;
+  }
+  .header-img {
+    transform: scale(0.42);
+  }
+  .header-img img {
+    padding-top: 57px;
+  }
+  .header-text {
+    width: 250px;
+  }
+  .text-hight {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .text-small {
+    font-size: 20px;
+  }
+  .header-button {
+    height: 35px;
+    width: 130px;
+    border-radius: 8px;
+    font-size: 22px;
+  }
+  /* ПОРОДЫ */
+  .title {
+    font-size: 40px;
+  }
+  .breeds-cats {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .breeds-cat {
+    margin-bottom: 20px;
+    width: 220px;
+    height: 220px;
+  }
+  .cat-img {
+    width: 220px;
+    height: 150px;
+  }
+  .cat-text {
+    font-size: 28px;
+    max-width: 135px;
+  }
+  .view-all {
+    margin-right: 90px;
+  }
+  /* СТАТИСТИКА */
+  .statistic {
+    min-height: 180px;
+  }
+  .statistic-contents { 
+    margin-left: 50px;
+  }
+  .statistic-content { 
+    margin-top: 40px;
+  }
+  .statistic-text-hight {
+    font-size: 40px;
+  }
+  .statistic-text-small {
+    width: 170px;
+    font-size: 20px;
+  }
+  .create-line-virtical {
+    margin-top: 15px;
+    height: 150px;
+  }
+  .animated-content {
+
+    top: 40px;
+  }
+  /* ОТЗЫВЫ */
+  .reviews-content {
+    padding: 10px;
+    width: 380px;
+    height: 230px;
+  }
+  .name-client {
+    font-size: 12px;
+  }
+  .reviews-date {
+    font-size: 10px;
+  }
+  .reviews-decor {
+    margin-top:10px;
+    width: 30px;
+    height: 25px;
+  }
+  .reviews-text {
+    font-size: 11px;
+  }
+  .reviews-stars {
+    margin-top: 10px;
+    height: 15px;
+    width: 90px;
+  }
+  .swiper-pagination-progressbar {
+    margin-top: 280px;
+  }
+  .swiper {
+    height: 320px;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    margin-top: -60px;
+  }
+}
+
+@media screen and (max-width: 565px) and (min-width: 450px){
+  .header-img-content {
+    max-width: 100px;
+    margin-right: -5px;
+  }
+  .header-img img {
+    padding-top: 72px;
+  }
+  .header-buy {
+    width: 180px;
+    height: 115px;
+  }
+  .header-text {
+    max-width: 230px;
+  }
+  .text-hight {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .text-small {
+    font-size: 20px;
+  }
+  .statistic-contents { 
+    margin-left: -20px;
+  }
+}

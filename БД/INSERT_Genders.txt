@@ -1,0 +1,2 @@
+INSERT INTO `genders`(`id-gender`, `gender-title`) VALUES (1,'Мужской')
+INSERT INTO `genders`(`id-gender`, `gender-title`) VALUES (2,'Женский')
